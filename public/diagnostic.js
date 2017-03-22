@@ -23,3 +23,26 @@
 //  -  Order 1 : 2 hats ($5 each)
 //  -  Order 2 : 1 desk lamp ($20 each)
 //  -  Order 3 : 3 hand towels ($8 each)
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+  model: function(){
+    return [
+      {
+        id: 1,
+        name: 'hats',
+        price: 5
+      },
+      {
+        id: 2,
+        name: 'desk lamp',
+        price: 20
+      },
+      {
+        id: 3,
+        name: 'Hand Towels',
+        price: 8
+      },
+    ];
+  }
+});
